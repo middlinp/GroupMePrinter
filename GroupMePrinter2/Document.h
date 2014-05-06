@@ -8,6 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface Document : NSDocument
 
+@interface Document : NSDocument
+@property NSArray* contents;
 @end
