@@ -19,6 +19,7 @@
 		89B47CD5191980E9003DC898 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89B47CB1191980E9003DC898 /* Cocoa.framework */; };
 		89B47CDD191980E9003DC898 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89B47CDB191980E9003DC898 /* InfoPlist.strings */; };
 		89B47CDF191980E9003DC898 /* GroupMePrinter2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B47CDE191980E9003DC898 /* GroupMePrinter2Tests.m */; };
+		89B47CEA191AC81C003DC898 /* PrintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B47CE9191AC81C003DC898 /* PrintView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		89B47CDA191980E9003DC898 /* GroupMePrinter2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GroupMePrinter2Tests-Info.plist"; sourceTree = "<group>"; };
 		89B47CDC191980E9003DC898 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		89B47CDE191980E9003DC898 /* GroupMePrinter2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroupMePrinter2Tests.m; sourceTree = "<group>"; };
+		89B47CE8191AC81C003DC898 /* PrintView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintView.h; sourceTree = "<group>"; };
+		89B47CE9191AC81C003DC898 /* PrintView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,8 @@
 				89B47CC9191980E9003DC898 /* MainMenu.xib */,
 				89B47CCC191980E9003DC898 /* Images.xcassets */,
 				89B47CB8191980E9003DC898 /* Supporting Files */,
+				89B47CE8191AC81C003DC898 /* PrintView.h */,
+				89B47CE9191AC81C003DC898 /* PrintView.m */,
 			);
 			path = GroupMePrinter2;
 			sourceTree = "<group>";
@@ -257,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89B47CC5191980E9003DC898 /* Document.m in Sources */,
+				89B47CEA191AC81C003DC898 /* PrintView.m in Sources */,
 				89B47CBE191980E9003DC898 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -478,6 +484,7 @@
 				89B47CE4191980E9003DC898 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		89B47CE5191980E9003DC898 /* Build configuration list for PBXNativeTarget "GroupMePrinter2Tests" */ = {
 			isa = XCConfigurationList;
@@ -486,6 +493,7 @@
 				89B47CE7191980E9003DC898 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

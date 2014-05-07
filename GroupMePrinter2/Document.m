@@ -7,6 +7,7 @@
 //
 
 #import "Document.h"
+#import "PrintView.h"
 
 @implementation Document
 
@@ -61,11 +62,14 @@
    return YES;
 }
 
-// TODO: fill this in.
+
 // peep this: https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/Printing/osxp_printapps/osxp_printapps.html
 - (NSPrintOperation *)printOperationWithSettings:(NSDictionary *)printSettings error:(NSError **)outError
 {
-   return nil;
+   PrintView* printView = [[PrintView alloc] initWithMessages:self.contents];
+   NSPrintInfo* printInfo = [NSPrintInfo sharedPrintInfo];
+   NSPrintOperation* printOp = [NSPrintOperation printOperationWithView:printView printInfo:printInfo];
+   return printOp;
 }
 
 @end
